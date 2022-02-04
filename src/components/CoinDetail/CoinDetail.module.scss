@@ -1,0 +1,348 @@
+.detailContainer {
+  max-width: 1400px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 12px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .detailRow {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+
+    .detailColumn {
+      margin-right: auto;
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 0 0 41.66%;
+      max-width: 41.66%;
+
+      .detailHead {
+        width: 100%;
+        position: relative;
+
+        .detailCoinSelect {
+          display: flex;
+          align-items: center;
+          padding: 15px 20px;
+          overflow: hidden;
+          border-radius: 5px;
+
+          .moreCoinDropDown {
+            i {
+              font-size: 12px;
+              margin-left: 12px;
+              color: #fff;
+            }
+          }
+
+          .detailSelectWrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .detailCoinName {
+              font-size: 18px;
+              color: #fff;
+              line-height: 30px;
+              margin: 0 10px;
+            }
+
+            .detailCoinSymbol {
+              font-size: 12px;
+              color: #bbbbbe;
+              line-height: 30px;
+              margin-top: 3px;
+              text-transform: uppercase;
+            }
+
+            .coinImageWrapper {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: relative;
+              border-radius: 3px;
+              overflow: hidden;
+              width: 33px;
+              height: 33px;
+
+              .coinBackground {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                opacity: .1;
+              }
+
+              img {
+                width: 80%;
+                display: block;
+                border-radius: 4px;
+              }
+            }
+          }
+        }
+
+        .detailInfo {
+          position: absolute;
+          right: 0;
+          top: 8px;
+
+          .detailInfoText {
+            color: #bbbbbe;
+            font-size: 11px;
+            margin-right: 5px;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          button {
+            color: #bbbbbe;
+            height: 44px;
+            width: 44px;
+            border: none;
+            font-size: .875rem;
+            cursor: pointer;
+            background-color: transparent;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        .detailChart {
+          position: absolute;
+          top: 75px;
+          right: 0;
+          left: 0;
+          z-index: -1;
+          height: 215px;
+
+          svg {
+            color: #bbbbbe;
+            caret-color: #bbbbbe;
+          }
+        }
+
+        .detailMarket {
+          padding-top: 20px;
+          min-height: 240px;
+          border-top: 1px solid #bbbbbe;
+
+          h3 {
+            font-size: 40px;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 0;
+            color: #fff;
+            font-weight: 700;
+            padding: 0;
+          }
+
+          p {
+            margin-bottom: 0;
+            margin-top: 5px;
+            font-size: 15px;
+            text-align: center;
+            color: #e84362;
+
+            i {
+              margin-left: 5px;
+              font-size: 10px;
+              font-weight: 700;
+              position: relative;
+              top: -1px;
+            }
+          }
+        }
+      }
+
+      .detailBody {
+        background-color: #1c1f27;
+        border: 1px solid #1c1f27;
+        color: #fff;
+        width: 100%;
+        border-radius: 5px;
+
+        .detailTabs {
+
+          .buyTab {
+            .selectedTabContentWrapper {
+              padding: 16px;
+              .tabContentBuyInput {
+                width: 100%;
+
+                label {
+                  color: #bbbcbf;
+                  font-size: 12px;
+                }
+
+                .contentTextField {
+                  color: #fff;
+
+                  ::before {
+                    border-bottom: 1px solid #bbbcbf !important;
+                  }
+
+                  ::after {
+                    border-bottom: 2px solid #96a825 !important;
+                  }
+                }
+              }
+              .tabContentMessage {
+                display: flex;
+                flex: 1 0 auto;
+                min-height: 14px;
+                position: relative;
+                margin-top: 8px;
+
+                .tabMessageWrapper {
+                  color: #ffffffb3;
+                  font-size: 10px;
+                  position: absolute;
+                  right: 0;
+                  top: -1px;
+
+                  .tabMessageDiv {
+                    line-height: 12px;
+
+                  }
+                }
+
+                button {
+                  height: 36px;
+                  padding: 0 16px;
+                  color: #fff;
+                  margin-top: 24px;
+                  font-size: 0.875rem;
+                  display: flex;
+                  flex: 1 0 auto;
+                  min-width: 100%;
+                  justify-content: center;
+                  align-items: center;
+                  background-color: #96a825;
+                  border-radius: 4px;
+                  border: none;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+
+          .sellTab {
+            .selectedTabContentWrapper {
+              padding: 16px;
+              .tabContentSellInput {
+                width: 100%;
+
+                label {
+                  color: #bbbcbf;
+                  font-size: 12px;
+                }
+
+                .contentTextField {
+                  color: #fff;
+
+                  ::before {
+                    border-bottom: 1px solid #bbbcbf !important;
+                  }
+
+                  ::after {
+                    border-bottom: 2px solid #e84362 !important;
+                  }
+                }
+              }
+              .tabContentMessage {
+                display: flex;
+                flex: 1 0 auto;
+                min-height: 14px;
+                position: relative;
+                margin-top: 8px;
+
+                .tabMessageWrapper {
+                  color: #ffffffb3;
+                  font-size: 10px;
+                  position: absolute;
+                  right: 0;
+                  top: -1px;
+
+                  .tabMessageDiv {
+                    line-height: 12px;
+
+                  }
+                }
+
+                button {
+                  height: 36px;
+                  padding: 0 16px;
+                  color: #fff;
+                  margin-top: 24px;
+                  font-size: 0.875rem;
+                  display: flex;
+                  flex: 1 0 auto;
+                  min-width: 100%;
+                  justify-content: center;
+                  align-items: center;
+                  background-color: #e84362;
+                  border-radius: 4px;
+                  border: none;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+
+          .selectedTabSell {
+            color: #96a825;
+            border-bottom: 2px solid #96a825;
+
+            &:hover {
+              background-color: #394027;
+            }
+          }
+
+          .selectedTabBuy {
+            color: #e84362;
+            border-bottom: 2px solid #e84362;
+
+            &:hover {
+              background-color: #4c2835;
+            }
+          }
+        }
+
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          li {
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: .875rem;
+            height: 47px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+
+            &:hover {
+              background-color: #272a31;
+            }
+          }
+        }
+      }
+    }
+  }
+}
